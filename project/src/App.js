@@ -7,6 +7,7 @@ import './App.css';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import AddContact from './components/AddContact';
+import EditContact from './components/EditContact';
  
 const App = () => {
   return (
@@ -16,7 +17,7 @@ const App = () => {
       <Switch>
           <Route exact path ="/" component={()=><Home/> } />
           <Route path ="/add"><AddContact/></Route>
-          <Route  path ="/edit/:id"><h1>i am edit component</h1> </Route>
+          <Route  path ="/edit/:id"><EditContact/></Route>
       </Switch>
       
     </div>
