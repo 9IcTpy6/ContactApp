@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import {useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { toast } from "react-toastify";
 
 const AddContact = () => {
@@ -44,8 +44,8 @@ const AddContact = () => {
 
     return (
         <div className="container">
+            <h1 className="display-3 text-center">Add Contact</h1>
             <div className="row">
-                <h1 className="display-3 text-center">Add Contact</h1>
                 <div className="col-md-6 shadow mx-auto p-5">
                     <form onSubmit={handleSubmit}>
                         <div className="form-group">
